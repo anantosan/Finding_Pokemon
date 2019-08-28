@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Result</title>
+    <style>body{
+            background-image: url("https://i.dlpng.com/static/png/1838191--clouds-and-sky-png-1920_1080_preview.png");
+        }
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 40px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 8px;
+            font-family:"Montserrat";
+            }
+            .nama {
+            background-color: rgb(223, 235, 223);
+            border: none;
+            color: rgb(28, 102, 28);
+            padding: 15px 110px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 4px;
+            font-size: 36px;
+            font-family:"Montserrat";
+            }
+            .ket {
+            background-color: rgb(223, 235, 223);
+            border: none;
+            color: rgb(28, 102, 28);
+            padding: 10px 50px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 4px;
+            font-size: 22px;
+            font-family:"Montserrat";
+            }
+            </style>
+</head>
+<body><center><br>
+    <br>
+    <br>
+    <!-- <center><img src="http://pluspng.com/img-png/pokemon-logo-png-pokemon-logo-png-2000.png" width=600, height=220></center> -->
+    <h1 class="nama">{{data['name'].capitalize()}}<h1>
+    <img src={{data['sprites']['front_default']}} width=180, height=180>
+    <h3 class="ket">Id: {{data['id']}} Tinggi: {{data['height']}} Berat: {{data['weight']}} </h3>
+    <form method="GET" action="http://localhost:5000"><input type="submit" class="button" value="Back"></form>
+</center>
+</body>
+</html>
